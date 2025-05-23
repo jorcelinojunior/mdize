@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jorcelinojunior/mdize/main/images/mdize-logo-hero.png" alt="MDize Logo" width="128">
+  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-logo-hero.png" alt="MDize Logo" width="128">
 </p>
 
 <h1 align="center"><a href="https://marketplace.visualstudio.com/items?itemName=jorcelinojunior.mdize" target="_blank">MDize 📋</a></h1>
@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jorcelinojunior/mdize/main/images/mdize-in-action.gif" alt="MDize extension in action, copying multiple files" width="920"/>
+  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-in-action.gif" alt="MDize extension in action, copying multiple files" width="640"/>
 </p>
 
 ---
@@ -51,17 +51,17 @@ MDize integrates seamlessly into your VS Code workflow, whether you're in the Ex
 **1. Accessing MDize from the File Explorer:**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jorcelinojunior/mdize/main/images/mdize-explorer-context.png" alt="MDize context menu in VS Code File Explorer" width="700">
+  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-explorer-context.png" alt="MDize context menu in VS Code File Explorer" width="720">
   <br/>
-  <em>Figure 1 – Right-click any file or folder in the Explorer to quickly access MDize's "Copy Content" and "Copy Content with Lines" commands.</em>
+  <em><sub>Figure 1 – Right-click any file or folder in the Explorer to quickly access MDize's "Copy Content" and "Copy Content with Lines" commands.</sub></em>
 </p>
 
 **2. Accessing MDize from an Editor Tab:**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jorcelinojunior/mdize/main/images/mdize-title-context.png" alt="MDize context menu on an open editor tab title" width="700">
+  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-title-context.png" alt="MDize context menu on an open editor tab title" width="720">
   <br/>
-  <em>Figure 2 – You can also right-click directly on an open editor's tab title to use MDize (e.g., "Copy Content") on the active file.</em>
+  <em><sub>Figure 2 – You can also right-click directly on an open editor's tab title to use MDize (e.g., "Copy Content") on the active file.</sub></em>
 </p>
 
 ### 📄 Sample Output (what you get on the clipboard)
@@ -179,17 +179,17 @@ MDize recognises the following out‑of‑the‑box:
 ## ❓ Frequently Asked Questions
 
 <details>
-<summary><strong>‣ Can I copy several files at once, including whole folders?</strong></summary>
+<summary><strong>Can I copy several files at once, including whole folders?</strong></summary>
 <span>Yes. Select any mix of files and folders—the extension recurses sub‑folders and concatenates all eligible files into a single Markdown block.</span>
 </details>
 
 <details>
-<summary><strong>‣ What happens with large or binary files?</strong></summary>
+<summary><strong>What happens with large or binary files?</strong></summary>
 <span>Files bigger than **3 MB** or detected as binary are silently skipped, and a warning toast tells you which ones were ignored.</span>
 </details>
 
 <details>
-<summary><strong>‣ How do I change the keybindings?</strong></summary>
+<summary><strong>How do I change the keybindings?</strong></summary>
 <span>Open **Keyboard Shortcuts (`Ctrl+K Ctrl+S`) → search “MDize”** and map the commands to any combination you prefer.</span>
 </details>
 
