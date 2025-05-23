@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-logo-hero.png" alt="MDize Logo" width="128">
+  <img src="images/mdize-logo-hero.png" alt="MDize Logo" width="128">
 </p>
 
 <h1 align="center"><a href="https://marketplace.visualstudio.com/items?itemName=jorcelinojunior.mdize" target="_blank">MDize 📋</a></h1>
@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-in-action.gif" alt="MDize extension in action, copying multiple files" width="640"/>
+  <img src="images/mdize-in-action.gif" alt="MDize extension in action, copying multiple files" width="640"/>
 </p>
 
 ---
@@ -51,7 +51,7 @@ MDize integrates seamlessly into your VS Code workflow, whether you're in the Ex
 **1. Accessing MDize from the File Explorer:**
 
 <p align="center">
-  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-explorer-context.png" alt="MDize context menu in VS Code File Explorer" width="720">
+  <img src="images/mdize-explorer-context.png" alt="MDize context menu in VS Code File Explorer" width="720">
   <br/>
   <em><sub>Figure 1 – Right-click any file or folder in the Explorer to quickly access MDize's "Copy Content" and "Copy Content with Lines" commands.</sub></em>
 </p>
@@ -59,7 +59,7 @@ MDize integrates seamlessly into your VS Code workflow, whether you're in the Ex
 **2. Accessing MDize from an Editor Tab:**
 
 <p align="center">
-  <img src="https://github.com/jorcelinojunior/mdize/blob/main/images/mdize-title-context.png" alt="MDize context menu on an open editor tab title" width="720">
+  <img src="images/mdize-title-context.png" alt="MDize context menu on an open editor tab title" width="720">
   <br/>
   <em><sub>Figure 2 – You can also right-click directly on an open editor's tab title to use MDize (e.g., "Copy Content") on the active file.</sub></em>
 </p>

@@ -7,6 +7,14 @@ See also: [Keep a Changelog](https://keepachangelog.com/)
 
 ---
 
+## [1.0.5] – 2025-05-23
+
+### Changed
+- Updated all image links in `README.md` to use relative paths instead of GitHub URLs.
+- Improved compatibility with local renderers and the VS Code Marketplace display.
+
+---
+
 ## [1.0.4] – 2025-05-23
 
 ### Added
