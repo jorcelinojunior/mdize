@@ -1,0 +1,142 @@
+{
+  "name": "mdize",
+  "displayName": "MDize",
+  "description": "Easily copy source files from VSCode Explorer, perfectly formatted as Markdown for LLMs (ChatGPT, Gemini, Claude), code sharing, and reviews. With or without line numbers.",
+  "version": "1.0.2",
+  "publisher": "jorcelinojunior",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorcelinojunior/mdize.git"
+  },
+  "homepage": "https://github.com/jorcelinojunior/mdize/blob/main/README.md",
+  "badges": [
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/v/jorcelinojunior.mdize.svg?style=flat-square&logo=visualstudiocode",
+      "href": "https://marketplace.visualstudio.com/items?itemName=jorcelinojunior.mdize",
+      "description": "Marketplace Version"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/i/jorcelinojunior.mdize.svg?style=flat-square&logo=visualstudiocode",
+      "href": "https://marketplace.visualstudio.com/items?itemName=jorcelinojunior.mdize",
+      "description": "Marketplace Installs"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/jorcelinojunior/mdize/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jorcelino Junior",
+    "email": "juniorjorcelino@gmail.com",
+    "url": "https://github.com/jorcelinojunior"
+  },
+  "sponsor": {
+    "url": "https://buymeacoffee.com/jorcelinojunior"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://buymeacoffee.com/jorcelinojunior"
+  },
+  "pricing": "Free",
+  "icon": "images/mdize-logo-hero.png",
+  "private": false,
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "AI",
+    "Chat",
+    "Formatters",
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "mdize",
+    "markdown",
+    "copy",
+    "clipboard",
+    "llm",
+    "code",
+    "formatting",
+    "sharing",
+    "explorer",
+    "review"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mdize.copyClean",
+        "title": "MDize: Copy Content",
+        "enablement": "explorerResourceIsFolder || (isFileSystemResource && resourceScheme != 'untitled')",
+        "category": "MDize"
+      },
+      {
+        "command": "mdize.copyWithLines",
+        "title": "MDize: Copy Content with Lines",
+        "enablement": "explorerResourceIsFolder || (isFileSystemResource && resourceScheme != 'untitled')",
+        "category": "MDize"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "mdize.copyClean"
+        },
+        {
+          "command": "mdize.copyWithLines"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "mdize.copyClean"
+        },
+        {
+          "command": "mdize.copyWithLines"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "mdize.copyWithLines",
+        "key": "ctrl+alt+shift+c",
+        "when": "explorerViewletVisible || editorTextFocus"
+      },
+      {
+        "command": "mdize.copyClean",
+        "key": "ctrl+alt+c",
+        "when": "explorerViewletVisible || editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "watch": "tsc -watch -p ./  --preserveWatchOutput",
+    "compile": "rm -rf out/ && tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "pretest": "npm run lint",
+    "test": "npm run test:integration && npm run test:unit",
+    "test:unit": "mocha --require ts-node/register --recursive src/test/unit/**/*.test.ts",
+    "test:integration": "npm run compile && ts-node src/test/runTest.ts",
+    "package": "rm -rf *.vsix && npm run test && vsce package --out mdize.vsix",
+    "vscode:prepublish": "npm run compile",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/mime-types": "^2.1.4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.15.21",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "assert": "^2.1.0",
+    "eslint": "^8.56.0",
+    "mocha": "^11.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "5.5"
+  },
+  "dependencies": {
+    "mime-types": "^3.0.1"
+  }
+}
