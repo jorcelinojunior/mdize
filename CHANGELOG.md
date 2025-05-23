@@ -7,7 +7,7 @@ See also: [Keep a Changelog](https://keepachangelog.com/)
 
 ---
 
-## [1.0.1] – 2025-05-23
+## [1.0.4] – 2025-05-23
 
 ### Added
 - **Copy Content** — generates clean Markdown code fences.

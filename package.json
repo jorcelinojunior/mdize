@@ -2,7 +2,7 @@
   "name": "mdize",
   "displayName": "MDize",
   "description": "Easily copy source files from VSCode Explorer, perfectly formatted as Markdown for LLMs (ChatGPT, Gemini, Claude), code sharing, and reviews. With or without line numbers.",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "publisher": "jorcelinojunior",
   "repository": {
     "type": "git",
@@ -110,7 +110,7 @@
     ]
   },
   "scripts": {
-    "watch": "tsc -watch -p ./  --preserveWatchOutput",
+    "watch": "tsc -watch -p ./ --preserveWatchOutput",
     "compile": "rm -rf out/ && tsc -p ./",
     "lint": "eslint src --ext ts",
     "pretest": "npm run lint",
