@@ -102,7 +102,7 @@ function formatContent(
         .join("\n")
     : result.content;
 
-  return `### \`${result.relativePath}\`\n\n${codeFence}${result.language}\n${body}\n${codeFence}\n\n`;
+  return `### \`${result.relativePath}\`\n${codeFence}${result.language}\n${body}\n${codeFence}\n\n`;
 }
 
 /**
